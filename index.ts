@@ -6,8 +6,8 @@ dotenv.config();
 
 const app = express();
 
-const bankAccount1 = new BankAccount(1234, 1234, 100000);
-const bankAccount2 = new BankAccount(56789, 5678, 100000);
+const bankAccount1 = new BankAccount(1234, 1234, 100000000);
+const bankAccount2 = new BankAccount(56789, 5678, 100000000);
 
 
 app.get('/', (req, res) => {

@@ -5,8 +5,8 @@ var dotenv = require("dotenv");
 var bank_account_1 = require("./src/bank/bank-account");
 dotenv.config();
 var app = express();
-var bankAccount1 = new bank_account_1.BankAccount(1234, 1234, 100000);
-var bankAccount2 = new bank_account_1.BankAccount(56789, 5678, 100000);
+var bankAccount1 = new bank_account_1.BankAccount(1234, 1234, 100000000);
+var bankAccount2 = new bank_account_1.BankAccount(56789, 5678, 100000000);
 app.get('/', function (req, res) {
     var randomIntFromInterval = function (min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
